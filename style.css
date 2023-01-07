@@ -1,0 +1,69 @@
+html {
+    text-align: center;
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: tomato;
+}
+.navBar {
+    width: 100%;
+    background-color: #69281c;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.navBar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.175s;
+}
+.navBar a:hover {
+    background-color: tomato;
+    color:  black;
+}
+.navBar a.split {   
+    float: right;
+    background-color: tomato;
+    color: black;
+    transition: 0.175s;
+}
+.navBar a.split:hover {
+    background-color: #69281c;
+    color: white;
+}
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+h1 {
+    transition:0.75s;
+    margin: 0;
+}
+h1 a{
+    transition: 0.75;
+}
+h1:hover {
+    color: tomato;
+    font-size: 50px;
+    transition:0.75s;
+}
+h1 a:hover {
+    color: #69281c;
+    transition:0.75s;
+}
